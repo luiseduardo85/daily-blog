@@ -1,0 +1,14 @@
+<%- include("partials/header.ejs") %>
+
+<h2 class="edit-title">Create Post</h2>
+<form class="create-form" action="/create" method="post" >
+    <div class="new-post">
+        <label class="label-title" for="title">Título:</label><br>
+        <input class="blog-title" type="text" id="title" name="title"><br>
+        <label class="label-title" for="post-content">Conteúdo:</label><br>
+        <textarea type="text" id="post-content" name="text" rows="4"></textarea><br><br>
+        <input class="create-btn" type="submit" value="Criar post" />
+    </div>
+</form>
+
+<%- include("partials/footer.ejs") %>
